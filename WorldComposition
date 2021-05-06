@@ -1,0 +1,7 @@
+https://docs.unrealengine.com/zh-CN/BuildingWorlds/LevelStreaming/WorldBrowser/index.html
+(1) 开启WorldComposition选项, 则, 该level会变成Persistent, 并且, 会遍历该level所在目录及其子目录的所有level, 将他们作为sublevel自动添加到该level下.
+(2) 可以通过添加Layer来设置Stream distance.(注意, 这个Stream distance是指相机和这个level对应的LevelBounds最近边界的距离)
+(3) 这种方式不会吧sublevel加载到地图上, 当用到的时候再加载.
+(4) 在制作地图时, 一般是在Persistent level中进行, 然后通过Move Selected Actors to Level选项将该物件移动到指定地图中, 这样就可以将所有地图中的所有物体按照我们预定的方式加载了.
+
+借鉴https://www.jianshu.com/p/4e40696dac30?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
